@@ -1,5 +1,5 @@
-text = 'Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly, aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila, aoha uva h dvyk jvbsk il thkl vba.'    # Initial text
-shift = 7   # Shift of cipher
+text = ''    # Enter initial text
+shift = 0   # Enter shift of cipher (<0 for shift to the left, >0 for shift to the right(typically, to decode use negative numbers))
 def caesar(message, offset):   # Define a custom function, indent all following blocks. Use paramters message and offset for reusability
     alphabet = 'abcdefghijklmnopqrstuvwxyz' # Alphabet for cipher
     encrypted_text=''   # String to store the encrypted text
@@ -13,6 +13,3 @@ def caesar(message, offset):   # Define a custom function, indent all following 
     print('plain text:', message)  # Print the inital `text`
     print('encrypted text:', encrypted_text)    # Print the final encrypted text once
 caesar(text, shift)    # Call on our function using paramters `text` for message and `shift` for offset
-
-
- # Strings are immutable - they cannot be changed once created, however they can be reassigned (will use later). Thus, we cannot simply alter the 'H' in text to a new value.
