@@ -9,7 +9,7 @@ This repo contains two separate scripts:
 
 ---
 
-## 📂 Files Included
+# 📂 Files Included
 
 ### `Vigenere Cipher Encoder-Decoder.py`
 
