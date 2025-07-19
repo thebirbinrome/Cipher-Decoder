@@ -1,67 +1,68 @@
-# Cipher Decoder
+```markdown
+# 🔐 Cipher Decoder
 
-**Cipher Decoder** is a lightweight Python tool for decoding encrypted messages using two classic ciphers: **Caesar** and **Vigenère**. It supports both encoding and decoding when the correct key is provided.
+A beginner-friendly Python tool for encrypting and decrypting messages using **Caesar** and **Vigenère** ciphers.
 
-## Features
-
-- Caesar Cipher — encrypt or decrypt using a numeric shift key
-- Vigenère Cipher — encrypt or decrypt using an alphabetic keyword
-- Simple command-line interface
-- Supports both uppercase and lowercase letters, ignores non-alphabetic characters
+This repo contains two separate scripts:
+- `Vigenere Cipher Encoder-Decoder.py` – encrypts/decrypts text with a custom key, harder to crack!
+- `Caesar Cipher Encoder-Decoder.py` – uses a basic shift cipher with user-defined offset
 
 ---
 
-## How to Use
+## 📂 Files Included
 
-### 1. Clone the Repository
+### `Vigenere Cipher Encoder-Decoder.py`
+
+Encrypts or decrypts messages using the **Vigenère cipher**, which relies on a key to shift letters by varying amounts.
+
+**How to use:**
+
+Edit the following variables at the top of the file:
+
+```python
+text = 'uprola wps kyfdszoh wlu ng gsprvdu!'  # Your encrypted/decrypted message
+custom_key = 'birb'                           # Your decryption/encryption key
+setting = 'decrypt'                           # Set to 'encrypt' or 'decrypt'
+```
+
+Then run the script:
 
 ```bash
-git clone https://github.com/your-username/cipher-decoder.git
-cd cipher-decoder
+python vigenere.py
 ```
 
-### 2. Run the Python Script
+### `Caesar Cipher Encoder-Decoder.py`
+
+A simple Caesar cipher decoder/encoder that shifts each letter by a fixed number of positions in the alphabet.
+
+**How to use:**
+
+Edit the following at the top of the file:
+
+```python
+text = 'Pdnh vxuh wr fkhfn rxw pb rwkhu surmhfwv'  # Message to encode/decode
+shift = -3                                        # Shift value (positive = encode, negative = decode)
+```
+
+Then run the script:
 
 ```bash
-python main.py
-```
-
-You'll be prompted to:
-
-- Choose the cipher type (Caesar or Vigenère)
-- Choose to encode or decode
-- Enter the message
-- Enter the key
-
----
-
-## Example
-
-### Caesar Cipher (Decode)
-
-- **Message**: `Khoor Zruog!`
-- **Key**: `3`
-- **Output**: `Hello World!`
-
-### Vigenère Cipher (Decode)
-
-- **Message**: `Lxfopv Ef rnhr`
-- **Key**: `LEMON`
-- **Output**: `Attack At Dawn`
-
----
-
-## File Structure
-
-```
-cipher-decoder/
-├── main.py          # Main Python script
-├── README.md        # This file
-├── .gitignore       # Ignores Python-related cache files
+python caesar.py
 ```
 
 ---
 
-## Contributions
+## ✅ Features
 
-Pull requests are welcome! If you'd like to suggest improvements or additional ciphers (e.g., Atbash, Playfair, etc.), you can fix the repo and submit a PR.
+- Caesar cipher (with customizable shift)
+- Vigenère cipher (with custom key, supports encryption/decryption)
+- Easy to modify or expand
+- No external libraries needed
+
+---
+
+## 📌 To-Do / Planned Features
+
+- Brute-force Caesar attack (try all 26 shifts)
+- Auto-detect Caesar key using frequency analysis
+- GUI version using Tkinter
