@@ -1,7 +1,7 @@
-```markdown
-# 🔐 Cipher Decoder
+````markdown
+# Cipher Decoder
 
-A beginner-friendly Python tool for encrypting and decrypting messages using **Caesar** and **Vigenère** ciphers.
+A beginner-friendly Python tool for encrypting and decrypting messages using Caesar and Vigenère ciphers.
 
 This repo contains two separate scripts:
 - `Vigenere Cipher Encoder-Decoder.py` – encrypts/decrypts text with a custom key, harder to crack!
@@ -9,11 +9,11 @@ This repo contains two separate scripts:
 
 ---
 
-# 📂 Files Included
+## Files Included
 
 ### `Vigenere Cipher Encoder-Decoder.py`
 
-Encrypts or decrypts messages using the **Vigenère cipher**, which relies on a key to shift letters by varying amounts.
+Encrypts or decrypts messages using the Vigenère cipher, which relies on a key to shift letters by varying amounts.
 
 **How to use:**
 
@@ -23,13 +23,15 @@ Edit the following variables at the top of the file:
 text = 'uprola wps kyfdszoh wlu ng gsprvdu!'  # Your encrypted/decrypted message
 custom_key = 'birb'                           # Your decryption/encryption key
 setting = 'decrypt'                           # Set to 'encrypt' or 'decrypt'
-```
+````
 
 Then run the script:
 
 ```bash
 python vigenere.py
 ```
+
+---
 
 ### `Caesar Cipher Encoder-Decoder.py`
 
@@ -52,17 +54,20 @@ python caesar.py
 
 ---
 
-## ✅ Features
+## Features
 
-- Caesar cipher (with customizable shift)
-- Vigenère cipher (with custom key, supports encryption/decryption)
-- Easy to modify or expand
-- No external libraries needed
+* Caesar cipher (with customizable shift)
+* Vigenère cipher (with custom key, supports encryption/decryption)
+* Easy to modify or expand
+* No external libraries needed
 
 ---
 
-## 📌 To-Do / Planned Features
+## To-Do / Planned Features
 
-- Brute-force Caesar attack (try all 26 shifts)
-- Auto-detect Caesar key using frequency analysis
-- GUI version using Tkinter
+* Brute-force Caesar attack (try all 26 shifts)
+* Auto-detect Caesar key using frequency analysis
+* GUI version using Tkinter
+
+```
+```
