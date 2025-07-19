@@ -1,4 +1,3 @@
-````markdown
 # Cipher Decoder
 
 A beginner-friendly Python tool for encrypting and decrypting messages using Caesar and Vigenère ciphers.
